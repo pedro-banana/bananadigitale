@@ -2,9 +2,10 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>TEST Scroll Controlled with Touch Support (iOS Fix)</title>
+    <title>Hi, this is a test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: black;
@@ -16,6 +17,7 @@
             width: 100%;
             height: 100vh;
             overflow: hidden;
+         
         }
         .text {
             position: absolute;
@@ -48,21 +50,30 @@
             var isFadedOutLeft = false;
             var isFadedOutRight = false;
 
+          
             var lastTouchX = null;
 
+           
             function updateTextPosition(delta) {
+           
                 var direction = delta > 0 ? 'left' : 'right';
 
+                
                 if ((direction === 'left' && isFadedOutLeft) || (direction === 'right' && isFadedOutRight)) {
+                  
                     return;
                 }
 
+              
                 posX -= delta;
 
+                
                 textElement.style.left = posX + 'px';
 
+             
                 var rect = textElement.getBoundingClientRect();
 
+               
                 var visibleWidth = Math.min(rect.right, window.innerWidth) - Math.max(rect.left, 0);
 
                 visibleWidth = Math.max(0, Math.min(visibleWidth, rect.width));
@@ -85,7 +96,8 @@
             }
 
             function onWheel(event) {
-                event.preventDefault();
+                event.preventDefault(); 
+
                 var delta = event.deltaY;
 
                 updateTextPosition(delta);
