@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Day - Officina Tecnologica</title>
     <style>
-        @font-face {
-            font-family: 'Orbitron';
-            src: url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-            font-weight: normal;
-            font-style: normal;
-        }
         body {
             font-family: Arial, sans-serif;
             background: url('Open day sfondo.png') no-repeat center center fixed;
@@ -21,7 +15,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .table-container {
             width: 80%;
@@ -30,7 +24,7 @@
             border: 1px solid #FFFFFF;
             border-radius: 8px;
             background-color: #1E1E1E;
-            padding: 10px;
+            padding: 20px;
         }
         table {
             width: 100%;
@@ -52,9 +46,19 @@
             font-family: 'Orbitron', Arial, sans-serif;
         }
         img {
-            max-width: 720px;
+            max-width: 400px;
+            width: 100%;
             height: auto;
             margin: 0 auto;
+        }
+        .button-link {
+            background-color: #333333;
+            color: #FFFFFF;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            border: 1px solid #FFFFFF;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
@@ -63,6 +67,7 @@
     <img src="Officina Tecnologica Logo.png" alt="Officina Tecnologica Logo">
     <h1>Officina Tecnologica - Open Day</h1>
     <div class="table-container">
+        <h2>Dettagli dell'evento</h2>
         <table>
             <thead>
                 <tr>
@@ -73,7 +78,7 @@
             <tbody>
                 <tr>
                     <td>Data</td>
-                    <td>23 Novembre 2024</td>
+                    <td>30 Novembre 2024</td>
                 </tr>
                 <tr>
                     <td>Orario</td>
@@ -81,14 +86,18 @@
                 </tr>
                 <tr>
                     <td>Luogo</td>
-                    <td>Via Wolkenstein, 6 - Bolzano</td>
+                    <td><a href="https://www.google.com/maps/search/?api=1&query=Canalescuola,+Via+Wolkenstein,+6,+Bolzano" target="_blank">Via Wolkenstein, 6, Bolzano</a></td>
                 </tr>
                 <tr>
                     <td>Attivit&agrave;</td>
-                    <td>Stampa 3D, Coding, Elettronica, Intelligenza Artificiale</td>
+                    <td>Stampa 3D, Coding, Elettronica</td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <div style="margin-top: 20px;">
+        <a href="http://www.canalescuola.it/officina.html" target="_blank" class="button-link">SITO WEB OFFICINA TECNOLOGICA</a>
+    </div>
+
 </body>
 </html>
